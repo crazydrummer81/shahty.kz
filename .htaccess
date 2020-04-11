@@ -1,0 +1,23 @@
+RewriteEngine On
+
+#Убираем / в конце URL
+RewriteBase /
+#RewriteCond %{HTTP_HOST} (.*)
+#RewriteCond %{REQUEST_URI} /$ [NC]
+RewriteRule ^(.*)(/)$ $1 [L,R=301]
+
+Redirect 301 /index /
+
+RewriteCond %{THE_REQUEST} ([^\s]*?)\/{2,}(\?[^\s]*?)?
+RewriteRule (.*) %1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} " (/[^?/]+)\.php"
+RewriteRule ^ %1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ /$1.php [L]
+
+# Станица 404
+ErrorDocument 404 http://shahty.kz/error-404
+ErrorDocument 403 http://shahty.kz/error-404

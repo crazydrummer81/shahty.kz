@@ -1,0 +1,22 @@
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Дышите здоровьем",
+  "brand": "Дышите здоровьем",
+  "url": "http://shahty.kz",
+  "logo": "http://shahty.kz/img/logo.webp",
+  "description": "Сеть соляных шахт (галокамер) Дышите Здоровьем в Алматы - Галокомплекс.\nГалотерапия для детей и взрослых.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Толе би, 189/1, оф. 9",
+    "addressLocality": "Алматы",
+    "addressCountry": "Казахстан"
+  },
+  "aggregateRating": "5",
+  "hasMap": "https://g.page/Solyanye_peshery?share",
+  "openingHours": "Mo-Su 09:00-21:00",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+7 705 772 29 72"
+  }
+}

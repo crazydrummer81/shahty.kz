@@ -1,0 +1,53 @@
+.price-element {
+    margin: 15px 0px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1.5em;
+    padding: 0;
+    /* white-space: nowrap; */
+    font-weight: 600;
+}
+.price-element > span {
+    padding: 0;
+    line-height: 1em;
+}
+
+.price-product { font-size: 1.1em; white-space: nowrap; }
+.price-product::first-letter { text-transform: uppercase; }
+
+.price-link { 
+    width: 100%; 
+    align-self: center; 
+    margin: 0.9em 0.2em auto 0.2em; 
+    border-bottom-color: #d2d2d2;
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+}
+.price-actual, .price-old { color: #FF7F00; white-space: nowrap; }
+.price-actual::before, .price-old::before { content: "₸ "; }
+.price-actual {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.price-old { 
+    font-size: 0.7em; 
+    text-decoration: line-through; 
+    margin-right: 5px;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #d2d2d2;
+    margin: 0px auto 30px auto;
+}
+.price-note {
+    font-size: 1.3em;
+    
+}
+
+@media all and (max-width: 500px ) {
+    .price-product { white-space: normal; }
+}

@@ -1,0 +1,158 @@
+{
+    "categories" : [ 
+        { "name" : "none",       "parent_id": 0, "heading" : "без категории"},
+        { "name" : "abonement",  "parent_id": 0, "heading" : "абонементы" },
+        { "name" : "salt",       "parent_id": 0, "heading" : "соль" },
+        { "name" : "adult",      "parent_id": 1, "heading" : "для взрослых" },
+        { "name" : "child",      "parent_id": 1, "heading" : "для детей" },
+        { "name" : "pensioner",  "parent_id": 1, "heading" : "для пенсионеров" },
+        { "name" : "studen",     "parent_id": 1, "heading" : "для студентов и школьников" }
+    ],
+
+    "products" : [
+        {
+            "categorie_id" : 3,
+            "name"         : "разовое посещение",
+            "price_old"    : 3000,
+            "price_actual" : 3000
+        },
+        {
+            "categorie_id" : 3,
+            "name"         : "5&nbsp;сеансов",
+            "price_old"    : 12000,
+            "price_actual" : 12000
+        },
+        {
+            "categorie_id" : 3,
+            "name"         : "10&nbsp;сеансов",
+            "price_old"    : 20000,
+            "price_actual" : 20000
+        },
+        {
+            "categorie_id" : 3,
+            "name"         : "15&nbsp;сеансов",
+            "price_old"    : 27000,
+            "price_actual" : 27000
+        },
+        {
+            "categorie_id" : 3,
+            "name"         : "20&nbsp;сеансов",
+            "price_old"    : 30000,
+            "price_actual" : 30000
+        },
+        {
+            "categorie_id" : 3,
+            "name"         : "25&nbsp;сеансов",
+            "price_old"    : 35000,
+            "price_actual" : 35000
+        },
+        {
+            "categorie_id" : 4,
+            "name"         : "разовое посещение",
+            "price_old"    : 3000,
+            "price_actual" : 1500
+        },
+        {
+            "categorie_id" : 4,
+            "name"         : "5&nbsp;сеансов",
+            "price_old"    : 12000,
+            "price_actual" : 6000
+        },
+        {
+            "categorie_id" : 4,
+            "name"         : "10&nbsp;сеансов",
+            "price_old"    : 20000,
+            "price_actual" : 10000
+        },
+        {
+            "categorie_id" : 4,
+            "name"         : "15&nbsp;сеансов",
+            "price_old"    : 27000,
+            "price_actual" : 13500
+        },
+        {
+            "categorie_id" : 4,
+            "name"         : "20&nbsp;сеансов",
+            "price_old"    : 30000,
+            "price_actual" : 15000
+        },
+        {
+            "categorie_id" : 4,
+            "name"         : "25&nbsp;сеансов",
+            "price_old"    : 35000,
+            "price_actual" : 17500
+        },
+        {
+            "categorie_id" : 5,
+            "name"         : "разовое посещение",
+            "price_old"    : 3000,
+            "price_actual" : 1800
+        },
+        {
+            "categorie_id" : 5,
+            "name"         : "5&nbsp;сеансов",
+            "price_old"    : 12000,
+            "price_actual" : 8000
+        },
+        {
+            "categorie_id" : 5,
+            "name"         : "10&nbsp;сеансов",
+            "price_old"    : 20000,
+            "price_actual" : 13500
+        },
+        {
+            "categorie_id" : 5,
+            "name"         : "15&nbsp;сеансов",
+            "price_old"    : 27000,
+            "price_actual" : 20000
+        },
+        {
+            "categorie_id" : 5,
+            "name"         : "20&nbsp;сеансов",
+            "price_old"    : 30000,
+            "price_actual" : 25000
+        },
+        {
+            "categorie_id" : 5,
+            "name"         : "25&nbsp;сеансов",
+            "price_old"    : 35000,
+            "price_actual" : 30000
+        },
+        {
+            "categorie_id" : 6,
+            "name"         : "разовое посещение",
+            "price_old"    : 3000,
+            "price_actual" : 2500
+        },
+        {
+            "categorie_id" : 6,
+            "name"         : "5&nbsp;сеансов",
+            "price_old"    : 12000,
+            "price_actual" : 10000
+        },
+        {
+            "categorie_id" : 6,
+            "name"         : "10&nbsp;сеансов",
+            "price_old"    : 20000,
+            "price_actual" : 17000
+        },
+        {
+            "categorie_id" : 6,
+            "name"         : "15&nbsp;сеансов",
+            "price_old"    : 27000,
+            "price_actual" : 23000
+        },
+        {
+            "categorie_id" : 6,
+            "name"         : "20&nbsp;сеансов",
+            "price_old"    : 30000,
+            "price_actual" : 29000
+        },
+        {
+            "categorie_id" : 6,
+            "name"         : "25&nbsp;сеансов",
+            "price_old"    : 35000,
+            "price_actual" : 33000
+        }
+    ]
+}

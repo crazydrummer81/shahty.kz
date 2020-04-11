@@ -1,0 +1,7 @@
+.heroblock {
+    background-image: url(../img/hero-block-room-1600x800.webp);
+}
+@media all and (max-width: 600px) {
+    .heroblock {
+        background-image: url(../img/hero-block-room-449x800.webp);
+}

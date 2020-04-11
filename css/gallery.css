@@ -1,0 +1,26 @@
+.gallery {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap:15px;
+}
+
+.gallery-column {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-content: start;
+
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }

@@ -1,0 +1,153 @@
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu {
+    display: none;
+}
+.dws-menu label.toggleMenu {
+    background: #206676;
+    display: none;
+    padding: 5px 40px;
+    font-size: 1em;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    position: relative;
+    justify-content: end;
+    width: 100%;
+
+}
+.dws-menu label.toggleMenu a {
+    color: #FF7F00;
+    text-align: right;
+    padding: 6px 10px;
+    line-height: 1.3em;
+}
+.dws-menu label.toggleMenu img {
+    margin-right: 50px;
+	float: right;
+}
+.dws-menu label.toggleMenu .icon-menu {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 1.8em;
+    color: #FF7F00;
+}
+
+@media all and (max-width: 900px) {
+    .dws-menu {
+        overflow: hidden;
+        z-index: 1;
+
+    }
+    .dws-menu ul {
+        display: none;
+    }
+    .dws-menu label.toggleMenu {
+        display: flex;
+		justify-content: flex-end;
+    }
+    #nav-logo {
+        /* align-items: flex-end; */
+		display: none;
+    }
+	#nav-fill {
+		display: none;
+	}
+    input.toggleMenu:checked + label.toggleMenu {
+        background: #015367;
+    }
+    input.toggleMenu:checked ~ ul, 
+    input.toggleSubmenu:checked ~ ul {
+        display: block;
+        position: relative;
+    }
+    .dws-menu label.toggleSubmenu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+    input.toggleSubmenu:checked ~ a {
+        background: #015367;
+        
+    }
+    .dws-menu label.toggleSubmenu .icon-cheveron-down::before {
+        content: "\e901";
+        color: #FF7F00;
+        font-size: 2em;
+    }
+    .dws-menu label.toggleSubmenu .icon-cheveron-down {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+    }
+    .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .icon-cheveron-down::before {
+        content: "\e902";
+        color: #FF7F00;
+        font-size: 2em;
+    }
+
+    .heroblock, .overlay {
+        height: auto;
+    }
+    .heroblock-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    #heroblock_heading,
+    #heroblock_offer
+    {
+        display: block;
+
+    }
+    #heroblock_heading { 
+        font-size: 2.5rem; 
+        font-weight: 800; 
+        padding-top: 0px;
+        text-transform: uppercase;
+    }
+    #heroblock_offer { font-size: 2rem; font-weight: 600; padding-top: 30px; }
+    #heroblock_video {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        /* height: 20rem; */
+        margin-top: 30px;
+    }
+    #heroblock_button {
+        padding: inherit 15px;
+        text-align: center;
+		margin: 0px auto 30px auto;
+		font-size: 1em;
+	}
+	a.button_gift {
+		font-size: 1.15em;
+		padding: inherit 10px;
+    }
+	a.button_gift > br {
+		display: inline;
+	}
+    div.features {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .map {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #map1 { grid-column:1/2; /*width: 100%;*/}
+    #map2 { grid-row: 2/3; /*width: 100%;*/}
+    .map-info-left { text-align: left; }
+}
+
+@media all and (max-width: 600px) {
+        .heroblock {
+        background-image: url(../img/hero-block-room-449x800.webp);
+        background-size: cover;
+}
+
+}
