@@ -48,16 +48,15 @@
     echo('<article>'.$text."</article>\n");
     echo('</div></div>');
     
-    echo('<div class="row"><div class="container">');
-    $section_filename = "addons/gallery-otzyvy.html";
-    echo(module($section_filename));
-    echo('</div></div>');
+    echo("\n\n<div class='row'>\n    <div class='container'>");
+    include("addons/gallery-otzyvy.php");
+    echo("\n    </div>\n</div>");
 
     echo('<div class="row" style="padding: 40px 0px 40px 0px;"><div class="container">');
     $section_filename = "sections/features.html";
     echo(module($section_filename));
     echo('</div></div>');
-
+    
     echo('<div class="row" style="padding: 40px 0px 0px 0px;"><div class="container-fluid">');
     $section_filename = file_get_contents("text/map/heading.html");
     echo('<h2>'.$section_filename.'</h2>');
@@ -74,16 +73,16 @@
     echo('<footer>');
     echo(module($section_filename));
     echo('</footer>');
-
+    
+    include("addons/gallery-otzyvy-style.php"); // Отложенная загрузка изображений (отзывы)
+    
     echo('<script src="js/jquery.js"></script>');
     echo('<script src="js/jquery.jbcallme.js"></script>');
 
     $section_filename = "addons/form-popup.html";
     echo(module($section_filename));
 
-
 ?>
 
-        </div>
 </body>
 </html>

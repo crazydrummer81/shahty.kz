@@ -17,6 +17,8 @@
 
 .gallery-item {
     width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @media all and (max-width: 800px) {
