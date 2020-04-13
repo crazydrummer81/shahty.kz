@@ -1,9 +1,29 @@
 <?php
     require("module.php");
+    require("addons/gallery-otzyvy.php");
     $page_title = file_get_contents("text/otzyvy/title.html");
     $page_description = file_get_contents("text/otzyvy/description.html");
     $h1 = file_get_contents("text/otzyvy/heading.html");
     $text = file_get_contents("text/otzyvy/content.html");
+    
+    $gallery_directory = "https://shahty.kz/img/otzyvy/";
+    $gallery = array();
+    $gallery = [
+        [
+            new Image($gallery_directory."otzyv-001.webp"),
+            new Image($gallery_directory."otzyv-002.webp")
+        ],
+        [
+            new Image($gallery_directory."otzyv-004.webp"),
+            new Image($gallery_directory."otzyv-005.webp"),
+            new Image($gallery_directory."otzyv-006.webp")
+        ],
+        [
+            new Image($gallery_directory."otzyv-003.webp"),
+            new Image($gallery_directory."otzyv-007.webp"),
+            new Image($gallery_directory."otzyv-008.webp")
+        ]
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +69,8 @@
     echo('</div></div>');
     
     echo("\n\n<div class='row'>\n    <div class='container'>");
-    include("addons/gallery-otzyvy.php");
+    // include("addons/gallery-otzyvy.php");
+    galleryOutput($gallery);
     echo("\n    </div>\n</div>");
 
     echo('<div class="row" style="padding: 40px 0px 40px 0px;"><div class="container">');
@@ -74,7 +95,8 @@
     echo(module($section_filename));
     echo('</footer>');
     
-    include("addons/gallery-otzyvy-style.php"); // Отложенная загрузка изображений (отзывы)
+    // include("addons/gallery-otzyvy-style.php"); // Отложенная загрузка изображений (отзывы)
+    galleryOutputCSS($gallery);
     
     echo('<script src="js/jquery.js"></script>');
     echo('<script src="js/jquery.jbcallme.js"></script>');
