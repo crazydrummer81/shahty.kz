@@ -7,10 +7,14 @@
         <title>Соляная шахта Алматы. Галотерапия для детей и взрослых. Заходите.</title>
         <meta name="description" content="Соляная шахта (Галокамера) Алматы. Влажность 40%. Сеанс 40 минут. Используем только натуральные продукты. Игрушки для детей. Удобная парковка." />
         <meta name="theme-color" content="#015367">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
         <link rel="icon" sizes="192x192" href="img/logo-192x192-shahty-kz.png">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/media.css" />
+        <script src="js/jquery-1.12.4.min.js"></script>    
+        <script src="js/jquery.lazy.min.js"></script>
+        <script src="js/jquery.lazy.ajax.min.js"></script>
+
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
         <script type='application/ld+json'> 
 {
@@ -148,6 +152,8 @@
                 </div>
                 <div id="heroblock_video" style="border: 1px gray;">
                     <!-- <iframe 
+    class="lazy"
+    data-loader="ajax"
     style="width: 100%; height: 100%; border: 0px;" 
     src="https://www.youtube.com/embed/zf3Q92YRvgY?controls=2&modestbranding=1&rel=0&color=white" 
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -157,6 +163,8 @@
 </iframe> -->
 
 <iframe
+  class="lazy"
+  data-loader="ajax"
   style="width: 100%; height: 100%; border: 0px;" 
   src="https://www.youtube.com/embed/zf3Q92YRvgY"
   srcdoc="<style>
@@ -295,11 +303,12 @@
         </a>
     </div>
 </div>
-    <div class="map-widget" id="map1"><a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001033070815/center/76.89156,43.252286/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.89156,43.252286/zoom/16/routeTab/rsType/bus/to/76.89156,43.252286╎Дышите%20здоровьем,%20сеть%20соляных%20шахт?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дышите здоровьем, сеть соляных шахт</a></div><script src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script>new DGWidgetLoader({"width":"100%","height":"100%","borderColor":"#f5f5f5","pos":{"lat":43.252286,"lon":76.89156,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001033070815"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript></div>
-</div></div></div>
+    <div class="map-widget lazy" id="map1" data-loader="ajax" data-src="addons/map-1-widget-2gis.html"></div>
+</div>
+</div></div>
         <div class="row" style="padding: 0px;"><div class="container-fluid"><div class="map">
 
-    <div class="map-widget" id="map2"><a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001031115823/center/76.94573163986207,43.336946359872904/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/firm/70000001031115823/photos/70000001031115823/center/76.94573163986207,43.336946359872904/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.945736,43.336639/zoom/16/routeTab/rsType/bus/to/76.945736,43.336639╎Дышите%20здоровьем,%20сеть%20соляных%20шахт?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дышите здоровьем, сеть соляных шахт</a></div><script src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script>new DGWidgetLoader({"width":"100%","height":"100%","borderColor":"#f5f5f5","pos":{"lat":43.336946359872904,"lon":76.94573163986207,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001031115823"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript></div>
+    <div class="map-widget lazy" id="map2" data-loader="ajax" data-src="addons/map-2-widget-2gis.html"></div>
     <div class="map-info">
     <div class="map-info-heading"><strong>Филиал 2<br/></strong>
 ул. Шолохова, 29, бутик В17<br/>
@@ -329,10 +338,13 @@
 </footer>
     <!-- </div> -->
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.jbcallme.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.jbcallme.js"></script>
-    <script>
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.jbcallme.css">
+        <script src="js/jquery.jbcallme.js"></script>
+        <script>
     $(function() {
         $('.callme_order_btn').jbcallme({ 
             postfix: "button_callback",
@@ -411,10 +423,13 @@ $(function() {
 
 
 </script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" type="text/css" href="css/images-lazy.css">
+
+        <script>
+            $(function() {
+                 $(".lazy").Lazy();
+            });
+        </script>
         
-    <link rel="stylesheet" type="text/css" href="css/images-lazy.css">
-    </body>
-</html>
+</body>
+    </html>
