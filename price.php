@@ -13,6 +13,8 @@
 
     <title> <?php echo($page_title);?> </title>
     <meta name="description" content="<?php echo($page_description);?>" />
+    <meta name="theme-color" content="#015367">
+    <link rel="icon" sizes="192x192" href="img/logo-192x192-shahty-kz.png">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="css/style.css" />

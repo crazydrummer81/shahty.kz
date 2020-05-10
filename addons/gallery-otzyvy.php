@@ -13,11 +13,10 @@ class Image {
     }
 }
     
-    function galleryOutput($gallery) {
+    function galleryOutput($gallery) { // Выводит сетку фотографий (массив объектов Image), как она задана в массиве
         echo("\n\n<figure class='gallery'>");
         foreach($gallery as $column) {
             echo("\n    <div class='gallery-column'>");
-            $rate = 0.8;
             foreach($column as $item) {
                 printf("\n        <div id=%s class='gallery-item' style='width:%s; height:%s;'></div>", $item->html_id, $item->width, $item->height);
             };
