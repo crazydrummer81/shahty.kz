@@ -36,7 +36,7 @@
 @media all and (max-width: 900px) {
     .dws-menu {
         overflow: hidden;
-        z-index: 1;
+        z-index: 200;
 
     }
     .dws-menu ul {

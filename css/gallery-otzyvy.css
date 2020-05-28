@@ -1,0 +1,25 @@
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.gallery--item {
+	margin: 10px;
+	width: 320px;
+	height: 240px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.gallery--item img {
+	min-width: 320px;
+	min-height: 240px;
+	cursor: zoom-in;
+	transition: 200ms;
+}
+.gallery--item img:hover {
+	transform: scale(1.1,1.1);
+	transition: 200ms;
+}

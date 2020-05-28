@@ -7,10 +7,10 @@
         <title>Соляная шахта Алматы. Галотерапия для детей и взрослых. Заходите.</title>
         <meta name="description" content="Соляная шахта (Галокамера) Алматы. Влажность 40%. Сеанс 40 минут. Используем только натуральные продукты. Игрушки для детей. Удобная парковка." />
         <meta name="theme-color" content="#015367">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
         <link rel="icon" sizes="192x192" href="img/logo-192x192-shahty-kz.png">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/media.css" />
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
         <script type='application/ld+json'> 
 {
@@ -299,7 +299,19 @@
 </div></div></div>
         <div class="row" style="padding: 0px;"><div class="container-fluid"><div class="map">
 
-    <div class="map-widget" id="map2"><a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001031115823/center/76.94573163986207,43.336946359872904/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/firm/70000001031115823/photos/70000001031115823/center/76.94573163986207,43.336946359872904/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.945736,43.336639/zoom/16/routeTab/rsType/bus/to/76.945736,43.336639╎Дышите%20здоровьем,%20сеть%20соляных%20шахт?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дышите здоровьем, сеть соляных шахт</a></div><script src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script>new DGWidgetLoader({"width":"100%","height":"100%","borderColor":"#f5f5f5","pos":{"lat":43.336946359872904,"lon":76.94573163986207,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001031115823"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript></div>
+    <div class="map-widget" id="map2"><a class="dg-widget-link"
+	href="http://2gis.kz/almaty/firm/70000001031115823/center/76.94573163986207,43.336946359872904/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+	на карте Алматы</a>
+<div class="dg-widget-link"><a
+		href="http://2gis.kz/almaty/firm/70000001031115823/photos/70000001031115823/center/76.94573163986207,43.336946359872904/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии
+		компании</a></div>
+<div class="dg-widget-link"><a
+		href="http://2gis.kz/almaty/center/76.945736,43.336639/zoom/16/routeTab/rsType/bus/to/76.945736,43.336639╎Дышите%20здоровьем,%20сеть%20соляных%20шахт?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+		проезд до Дышите здоровьем, сеть соляных шахт</a></div>
+<script src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+<script>new DGWidgetLoader({ "width": "100%", "height": "100%", "borderColor": "#f5f5f5", "pos": { "lat": 43.336946359872904, "lon": 76.94573163986207, "zoom": 16 }, "opt": { "city": "almaty" }, "org": [{ "id": "70000001031115823" }] });</script>
+<noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в
+	настройках вашего браузера.</noscript></div>
     <div class="map-info">
     <div class="map-info-heading"><strong>Филиал 2<br/></strong>
 ул. Шолохова, 29, бутик В17<br/>
