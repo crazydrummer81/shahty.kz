@@ -6,7 +6,7 @@
 	$image_files = scandir($image_files_path);
 ?>
 
-	<div class="gallery" data-src="slide-2">
+	<div class="gallery">
 		<?php	foreach( $image_files as $index=>$file_path ) {
 			if( is_dir($image_files_path.$file_path) ) continue;
 			$file_name = get_filename_from_path($file_path);
@@ -14,7 +14,9 @@
 			$img_thumb_path = $images_thumbs_path.$file_name;
 		?>
 		<div class="gallery--item">
-			<a class="gallery--thumb" data-src="slide-<?=$index?>" style="background-image: url(<?=$img_thumb_path?>);"></a>
+			<a class="gallery--thumb" data-src="slide-<?=$index?>">
+				<img src="<?=$img_thumb_path?>" alt="Соляная шахта в Алматы" loading="lazy">
+			</a>
 		</div>
 		<?php }; unset($file_path); ?>
 	</div>
@@ -25,6 +27,6 @@
 			$img_path = $images_path.$file_name;
 			$img_thumb_path = $images_thumbs_path.$file_name;
 		?>
-			<div class="m2slider-set--item" id="slide-<?=$index?>"><img loading="lazy" src="<?=$img_path?>" alt=""></div>
+			<div class="m2slider-set--item" id="slide-<?=$index?>"><img loading="lazy" src="<?=$img_path?>" alt="Соляная пещера в Алматы"></div>
 		<?php }; unset($file_path); ?>
 	</div>
