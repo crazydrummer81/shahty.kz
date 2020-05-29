@@ -5,8 +5,8 @@
 ?>
 	<div class="overlay">
 		<!-- <div class="container"> -->
-			<div class="heroblock-container" style="border: 1px gray;">
-				<div style="border: 1px gray;">
+			<div class="heroblock-container">
+				<div>
 					<h3 id="heroblock_heading"><?=$article->heading;?></h3>
 				</div>
 				<div id="heroblock_offer"><?=$article->content;?></div>

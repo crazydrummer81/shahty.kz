@@ -1,5 +1,5 @@
 @import "icomoon.css";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=cyrillic');
 
 * {
     padding: 0px;
@@ -29,19 +29,10 @@ body {
     /* max-width: 1600px; */
 }
 
-/* .main-container {
-    max-width: 1600px;
-    margin: 0px auto;
-    position: absolute;
-    top:0; left:0; right:0; bottom:0;
-    height: 2000px;
-    background: #fff;
-} */
-
 a, a:visited {text-decoration: none; transition: all 150ms ease-in; color: inherit;}
 img{vertical-align: top;}
 
-h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
+h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: normal;}
 
 
 a:hover {
@@ -57,7 +48,7 @@ a.button {
     border-radius: 100px;
     padding: 15px 25px;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center;
     white-space: pre-line;
     vertical-align: middle;
@@ -145,7 +136,7 @@ nav {
     left: 10px;
     /* padding-top: 3px; */
     display: inline-flex;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1.2em;
     line-height: 1.2em;
 }
@@ -170,7 +161,7 @@ nav {
     left: 10px;
     padding-top: 3px;
     display: inline-flex;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1.2em;
     line-height: 1.2em;
 }
@@ -190,7 +181,7 @@ nav {
     background: #206676;
     padding: 23px 20px 23px 40px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     color: rgb(255, 127, 0);
     text-decoration: none;
     text-transform: uppercase;
@@ -297,11 +288,12 @@ nav {
  }
  #heroblock_heading { 
      font-size: 2.5rem; 
-     font-weight: 800; 
+     font-weight: bold; 
      padding-top: 0px;
      text-transform: uppercase;
+     text-align: left;
 }
-#heroblock_offer { font-size: 2rem; font-weight: 600; padding-top: 0px; }
+#heroblock_offer { font-size: 2rem; font-weight: normal; padding-top: 0px; line-height: 1.4em; }
 
 div.row, div.row-dark, div.row-light {
     width: 100%;
@@ -324,7 +316,7 @@ div.row:nth-child(odd) {
 h1,h2,h3 {
     display: block;
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 40px;
     line-height: 1.4em;
 }
@@ -401,9 +393,10 @@ h3 {
 }
 .map-info-left { text-align: right;}
 
-.map-info-heading { font-size: 1.2em; font-weight: 500; line-height: 1.5em;}
+.map-info-heading { font-size: 1.2em; font-weight: bold; line-height: 1.5em;}
+.map-info-heading strong { font-size: 1.4em;}
 .map-info-content { font-size: 1em; padding: 30px 20px auto 20px;}
-.map-info-phone { font-size: 1.5em; font-weight: 700; padding: 30px 0px; }
+.map-info-phone { font-size: 1.5em; font-weight: bold; padding: 30px 0px; }
 
 article {
     font-size: 1.2em;
@@ -421,7 +414,7 @@ article h2 {
 article h3 {
     margin: 20px auto 10px auto;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: bold;
     text-align: left;
 }
 article p { margin: 0.5em auto -0.5em auto; }
@@ -439,7 +432,7 @@ article#article_faq h3 {
     padding: 50px 0px 0px 0px;
     font-size: 3em;
     text-align: center;
-    font-weight: 900;
+    font-weight: bold;
 }
 .h2_404 {
     padding: 30px 0px 30px 0px;

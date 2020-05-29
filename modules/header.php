@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/media.css" />
 		<?=$page->additional_head_elements; ?>
 
-		<script type='application/ld+json' src='json/schema-org.json'></script>
+		<script type='application/ld+json'><?php include('json/schema-org.json');?></script>
 	</head>
 	<body>
 <?php 
