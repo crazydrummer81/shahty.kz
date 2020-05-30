@@ -1,7 +1,7 @@
 <?php
 	require_once $_SERVER['DOCUMENT_ROOT'].'/src/functions.php';
 	$htaccess = 
-'ErrorDocument 403 /404.html
+'ErrorDocument 403 /error-404.html
 ErrorDocument 404 /error-404.html
 
 DirectoryIndex home.html
@@ -26,10 +26,7 @@ RewriteRule ^shahtykz/$ home.html [NC]';
 		$htaccess .= "\n".'RewriteRule ^'.$page->alias.'/$ '.$page->alias.'.html [NC]';
 	}
 	
-	$htaccess .= "\n".'RewriteRule ^error-404$ 404.html [NC]'.
-	"\n".'RewriteRule ^error-404/$ error-404.html [NC]'.
-	"\n".
-	"\n".'RewriteRule ^favicon.ico$ shahty.kz/images/favicon.ico [R=302,L]'."\n";
+	$htaccess .= "\n".'RewriteRule ^favicon.ico$ shahty.kz/images/favicon.ico [R=302,L]'."\n";
 	file_put_contents($_SERVER['DOCUMENT_ROOT'].'/.htaccess', $htaccess);
 	
 	foreach( $pages as $i => $page) {
