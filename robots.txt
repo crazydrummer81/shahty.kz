@@ -43,6 +43,7 @@ Disallow: /js/
 Disallow: /sections/
 Disallow: /templates/
 Disallow: /text/
+Disallow: /src/
 Disallow: *?*
 Disallow: /index.php?*
 Disallow: /refresh.php?*
