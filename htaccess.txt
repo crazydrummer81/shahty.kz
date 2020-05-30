@@ -32,9 +32,6 @@ RewriteRule ^pokazaniya-protivopokazaniya/$ pokazaniya-protivopokazaniya.html [N
 RewriteRule ^error-404$ error-404.html [NC]
 RewriteRule ^error-404/$ error-404.html [NC]
 RewriteRule ^error-404$ 404.html [NC]
-	
 RewriteRule ^error-404/$ error-404.html [NC]
-	
 
-	
 RewriteRule ^favicon.ico$ shahty.kz/images/favicon.ico [R=302,L]
