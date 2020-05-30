@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+  <style>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .gallery {
+      width: 100%;
+      /* height: 500px; */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-template-rows: 240px 240px; */
+      grid-gap:2px;
+      position: relative;
+    }
+
+    .gallery--item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      position: relative;
+      padding-top: 75%;
+    }
+    /* .gallery--item img {
+      height: 100%;
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+      transition: 300ms;
+      z-index: 10;
+    }
+    .gallery--item img:hover {
+      transition: 300ms;
+      transform: scale(1.1,1.1);
+    } */
+    .gallery--thumb {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+      /* transition: 300ms; */
+    }
+    .gallery--thumb:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      /* transition: 300ms; */
+    }
+    .gallery--thumb::before {
+      content: '🔍';
+      position: absolute;
+      z-index: 1;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; height: 100%;
+      opacity: 0;
+    }
+    .gallery--thumb:hover::before {
+      opacity: .7;
+    }
+    .gallery--thumb, .gallery--thumb::before, .gallery--thumb:hover, .gallery--thumb:hover::before {
+      transition: 200ms;
+    }
+    @media (max-width: 768px) {
+      .gallery {
+        /* grid-template-columns: 1fr 1fr; */
+      }
+      .gallery::before {
+        content: '🔍';
+        position: absolute;
+        z-index: 100;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; height: 100%;
+        opacity: .7;
+      }
+      .gallery--item {
+        padding-top: 100%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="gallery">
+    <div class="gallery--item">
+      <a class="gallery--thumb" style='background-image: url("img/gallery-home/thumbs/homepage-gallery-0010.jpg");' data-src="slide-2">
+        <!-- <img src="img/gallery-home/thumbs/homepage-gallery-0010.jpg" alt=""> -->
+      </a>
+    </div>
+    <div class="gallery--item">
+      <a class="gallery--thumb" style='background-image: url("img/gallery-home/thumbs/homepage-gallery-0020.jpg");' data-src="slide-3">
+        <!-- <img src="img/gallery-home/thumbs/homepage-gallery-0020.jpg" alt=""> -->
+      </a>
+    </div>
+    <div class="gallery--item">
+      <a class="gallery--thumb" style='background-image: url("img/gallery-home/thumbs/homepage-gallery-0040.jpg");' data-src="slide-4">
+        <!-- <img src="img/gallery-home/thumbs/homepage-gallery-0040.jpg" alt=""> -->
+      </a>
+    </div>
+    <div class="gallery--item">
+      <a class="gallery--thumb" style='background-image: url("img/gallery-home/thumbs/homepage-gallery-0050.jpg");' data-src="slide-5">
+        <!-- <img src="img/gallery-home/thumbs/homepage-gallery-0050.jpg" alt=""> -->
+      </a>
+    </div>
+    <div class="gallery--item">
+      <a class="gallery--thumb" style='background-image: url("img/gallery-home/thumbs/homepage-gallery-0055.jpg");' data-src="slide-6">
+        <!-- <img src="img/gallery-home/thumbs/homepage-gallery-0055.jpg" alt=""> -->
+      </a>
+    </div>
+    <div class="gallery--item">
+      <a class="gallery--thumb" style='background-image: url("img/gallery-home/thumbs/homepage-gallery-0060.jpg");' data-src="slide-7">
+        <!-- <img src="img/gallery-home/thumbs/homepage-gallery-0060.jpg" alt=""> -->
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

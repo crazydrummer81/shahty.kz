@@ -1,0 +1,83 @@
+{ "menu": [
+	{
+		"id": 1,
+		"parent-id": 0,
+		"name": "Главная",
+		"icon-class": "icon-home",
+		"alias": "home",
+		"type": "url",
+		"url": "/"
+	},
+	{
+		"id": 2,
+		"parent-id": 0,
+		"name": "Цены",
+		"icon-class": "icon-list",
+		"alias": "price",
+		"type": "url",
+		"url": "/price"
+	},
+	{
+		"id": 3,
+		"parent-id": 0,
+		"name": "Отзывы",
+		"icon-class": "icon-bubble2",
+		"alias": "otzyvy",
+		"type": "url",
+		"url": "/otzyvy"
+	},
+	{
+		"id": 4,
+		"parent-id": 0,
+		"name": "Контакты",
+		"icon-class": "icon-mail2",
+		"alias": "kontakty",
+		"type": "url",
+		"url": "/kontakty"
+	},
+	{
+		"id": 5,
+		"parent-id": 0,
+		"name": "Связаться",
+		"icon-class": "icon-phone",
+		"alias": "svyazatsya",
+		"type": "divider",
+		"url": ""
+	},
+	{
+		"id": 6,
+		"parent-id": 5,
+		"name": "+7&nbsp;705&nbsp;77&nbsp;22&nbsp;972",
+		"icon-class": "icon-phone",
+		"alias": "77057722972-phone",
+		"type": "url",
+		"url": "tel:+77057722972"
+	},
+	{
+		"id": 7,
+		"parent-id": 5,
+		"name": "+7&nbsp;705&nbsp;77&nbsp;22&nbsp;972",
+		"icon-class": "icon-whatsapp",
+		"alias": "77057722972-whatsapp",
+		"type": "url",
+		"url": "https://wa.me/77057722972"
+	},
+	{
+		"id": 8,
+		"parent-id": 5,
+		"name": "+7&nbsp;705&nbsp;77&nbsp;22&nbsp;896",
+		"icon-class": "icon-phone",
+		"alias": "77057722972-phone",
+		"type": "url",
+		"url": "tel:+77057722972"
+	},
+	{
+		"id": 9,
+		"parent-id": 5,
+		"name": "+7&nbsp;705&nbsp;77&nbsp;22&nbsp;896",
+		"icon-class": "icon-whatsapp",
+		"alias": "77057722972-whatsapp",
+		"type": "url",
+		"url": "https://wa.me/77057722972"
+	}
+]}
