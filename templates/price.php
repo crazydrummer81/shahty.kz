@@ -1,4 +1,4 @@
-<div class="row"></div>
+<div class="row" style="display:none;"></div>
 <?php
 
 $json = file_get_contents("json/pricelist.json");
