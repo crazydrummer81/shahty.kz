@@ -1,5 +1,5 @@
 <?php 
-	require_once('functions.php');
+	require_once $_SERVER['DOCUMENT_ROOT'].'/src/functions.php';
 	$module_name = get_name_from_path(__FILE__);
 	$module = get_module($module_name);
 	if( $module->shared ): 

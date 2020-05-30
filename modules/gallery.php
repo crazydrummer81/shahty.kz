@@ -1,5 +1,5 @@
 <?php
-	require_once 'functions.php';
+	require_once $_SERVER['DOCUMENT_ROOT'].'/src/functions.php';
 	$images_path = '/img/gallery-home/';
 	$images_thumbs_path = '/img/gallery-home/thumbs/';
 	$image_files_path = $_SERVER['DOCUMENT_ROOT'].$images_path;

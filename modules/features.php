@@ -1,5 +1,5 @@
 <?php
-	require_once 'functions.php';
+	require_once $_SERVER['DOCUMENT_ROOT'].'/src/functions.php';
 	global $articles;
 	$module_alias = get_name_from_path(__FILE__);
 

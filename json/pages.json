@@ -3,8 +3,10 @@
 		"id": 0,
 		"name": "Главная",
 		"alias": "home",
+		"template": "home.php",
 		"url": "/home",
 		"additional_head_elements": "",
+		"additional_body_elements": "<link rel='stylesheet' type='text/css' href='css/gallery.css' /><link rel='stylesheet' type='text/css' href='plugins/m2slider-simple.css' /><link rel='stylesheet' type='text/css' href='css/accordion.css' /><script src='plugins/m2slider-simple.js'></script><script src='js/accordion.min.js'></script>",
 		"title": "Соляная шахта Алматы. Галотерапия для детей и взрослых. Заходите.",
 		"description": "Соляная шахта (Галокамера) Алматы. Влажность 40%. Сеанс 40 минут. Используем только натуральные продукты. Игрушки для детей. Удобная парковка."
 	},
@@ -12,8 +14,10 @@
 		"id": 1,
 		"name": "Цены",
 		"alias": "price",
+		"template": "price.php",
 		"url": "/price",
 		"additional_head_elements": "",
+		"additional_body_elements": "<link rel='stylesheet' href='css/price.css' />",
 		"title": "Цены на услуги галокамеры. Сеть соляных пещер &quot;Дышите здоровьем&quot;",
 		"description": "Галокамера Алматы - цены от 1500 тг. Разовое посещение, абонементы для детей, взрослых, семейные. Скидки до 30% пенсионерам, инвалидам, студентам."
 	},
@@ -21,8 +25,10 @@
 		"id": 2,
 		"name": "Отзывы",
 		"alias": "otzyvy",
+		"template": "otzyvy.php",
 		"url": "/otzyvy",
 		"additional_head_elements": "",
+		"additional_body_elements": "<link rel='stylesheet' href='css/gallery-otzyvy.css' />",
 		"title": "Цены на услуги галокамеры. Сеть соляных пещер &quot;Дышите здоровьем&quot;",
 		"description": "Галокамера Алматы - цены от 1500 тг. Разовое посещение, абонементы для детей, взрослых, семейные. Скидки до 30% пенсионерам, инвалидам, студентам."
 	},
@@ -30,8 +36,10 @@
 		"id": 3,
 		"name": "Контакты",
 		"alias": "kontakty",
+		"template": "kontakty.php",
 		"url": "/kontakty",
 		"additional_head_elements": "",
+		"additional_body_elements": "",
 		"title": "Контакты соляной шахты Алматы. 3 филиала в разных районах города | shahty.kx",
 		"description": "Сеть соляных шахт Дышите здоровьем. Адреса, телефоны, карта. 2 филиала в удобных райнах Алматы | shahty.kz "
 	},
@@ -39,8 +47,10 @@
 		"id": 4,
 		"name": "О галотерапии",
 		"alias": "o-galoterapii",
+		"template": "o-galoterapii.php",
 		"url": "/o-galoterapii",
 		"additional_head_elements": "",
+		"additional_body_elements": "",
 		"title": "Для чего нужна соляная пещера. Что такое галокамера и галотерапия.",
 		"description": "Соляная комната - для чего нужна. Лечение и профилактика заболеваний органов дыхания, кожи, аллергий, повышение иммунитета в галокамере."
 	},
@@ -48,9 +58,22 @@
 		"id": 5,
 		"name": "Показания-противопоказания",
 		"alias": "pokazaniya-protivopokazaniya",
+		"template": "pokazaniya-protivopokazaniya.php",
 		"url": "/pokazaniya-protivopokazaniya",
 		"additional_head_elements": "",
-		"title": "ГПоказания и противопоказания соляной пещеры, кому можно, когда нельзя.",
+		"additional_body_elements": "",
+		"title": "Показания и противопоказания соляной пещеры, кому можно, когда нельзя.",
 		"description": "Галотерапия - показания и противопоказания. Подробный список - при каких заболеваниях можно посещать соляную комнату и в каких случаях нельзя."
+	},
+	{
+		"id": 5,
+		"name": "Ошибка 404",
+		"alias": "error-404",
+		"template": "error-404.php",
+		"url": "/error-404",
+		"additional_head_elements": "",
+		"additional_body_elements": "",
+		"title": "Страница не найдена. Сеть соляных шахт Дышите Здоровьем - shahty.kz",
+		"description": "Данная страница не существует или была удалена. Перейлите на другую страницу по ссылкам внизу."
 	}
 ]}

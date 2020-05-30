@@ -1,5 +1,5 @@
 <?php
-	require_once 'functions.php';
+	require_once $_SERVER['DOCUMENT_ROOT'].'/src/functions.php';
 ?>
 	<ul>
 		<li><a href="/">Главная</a></li>

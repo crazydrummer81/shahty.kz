@@ -5,30 +5,30 @@ $(function() {
 	$('#article_faq > ul').addClass('accordion accordionjs');
 });
 
-jQuery(document).ready(function($){
-	 $(".accordion").accordionjs();
+if ($(".accordion").length) 
+	jQuery(document).ready(function($){
+		$(".accordion").accordionjs();
+
+	$("#article_faq > ul").accordionjs({
+		// Allow self close.(data-close-able)
+		closeAble   : true,
+
+		// Close other sections.(data-close-other)
+		closeOther  : true,
+
+		// Animation Speed.(data-slide-speed)
+		slideSpeed  : 200,
+
+		// The section open on first init. A number from 1 to X or false.(data-active-index)
+		activeIndex : false,
+
+		// Callback when a section is open
+		// openSection: function( section ){},
+
+		// Callback before a section is open
+		// beforeOpenSection: function( section ){},
+	});
 });
-
-$("#article_faq > ul").accordionjs({
-	// Allow self close.(data-close-able)
-	closeAble   : true,
-
-	// Close other sections.(data-close-other)
-	closeOther  : true,
-
-	// Animation Speed.(data-slide-speed)
-	slideSpeed  : 200,
-
-	// The section open on first init. A number from 1 to X or false.(data-active-index)
-	activeIndex : false,
-
-	// Callback when a section is open
-	// openSection: function( section ){},
-
-	// Callback before a section is open
-	// beforeOpenSection: function( section ){},
-});
-
 function showModalImg(elem) {
 	img_path = elem.dataset.src;
 	

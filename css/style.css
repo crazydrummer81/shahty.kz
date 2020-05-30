@@ -1,5 +1,5 @@
 @import "icomoon.css";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
     padding: 0px;
@@ -404,6 +404,9 @@ article {
     text-align: justify;
     display: block;
     width: 100%;
+}
+article a {
+    color: #FF7F00 !important;
 }
 article > *:first-child {
     margin-top: 0;

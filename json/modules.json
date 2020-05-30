@@ -193,5 +193,30 @@
 		"css_class": "width_100",
 		"data_loader": "",
 		"data_src": ""
+	},
+	{
+		"id": 12,
+		"shared": true,
+		"name": "gallery-otzyvy",
+		"url": "/modules/gallery-otzyvy.php",
+		"heading": "Отзывы о наших соляных комнатах",
+		"heading_tag": "h3",
+		"tag": "div",
+		"css_id": "",
+		"css_class": "",
+		"data_loader": "",
+		"data_src": "",
+		"data": {
+			"image_set": [
+				{"src": "otzyvy/otzyv-001.webp", "alt": "Отзыв о соляной шахте Дышите здоровьем"},
+				{"src": "otzyvy/otzyv-002.webp", "alt": "Отзыв о соляной пещере Дышите здоровьем"},
+				{"src": "otzyvy/otzyv-004.webp", "alt": "Отзыв о соляной комнате Дышите здоровьем"},
+				{"src": "otzyvy/otzyv-005.webp", "alt": "Отзыв о галокамере Дышите здоровьем"},
+				{"src": "otzyvy/otzyv-006.webp", "alt": "Отзыв о соляной пещере Дышите здоровьем"},
+				{"src": "otzyvy/otzyv-003.webp", "alt": "Отзыв о соляной комнате Дышите здоровьем"},
+				{"src": "otzyvy/otzyv-007.webp", "alt": "Отзыв о соляной галокамере Дышите здоровьем"},
+				{"src": "otzyvy/otzyv-008.webp", "alt": "Отзыв о соляной шахте Дышите здоровьем"}
+			]
+		}
 	}
 ]}

@@ -1,0 +1,40 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /error-404.html
+
+DirectoryIndex home.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Scheme} =http
+RewriteRule ^(.*)$ shahty\.kz/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Scheme} =https
+RewriteCond %{HTTP_HOST} ^www\.vulkanizatsiya.kz [NC]
+RewriteRule ^(.*)$ shahty\.kz/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^shahtykz$ home.html [NC]
+RewriteRule ^shahtykz/$ home.html [NC]
+RewriteRule ^home$ home.html [NC]
+RewriteRule ^home/$ home.html [NC]
+RewriteRule ^price$ price.html [NC]
+RewriteRule ^price/$ price.html [NC]
+RewriteRule ^otzyvy$ otzyvy.html [NC]
+RewriteRule ^otzyvy/$ otzyvy.html [NC]
+RewriteRule ^kontakty$ kontakty.html [NC]
+RewriteRule ^kontakty/$ kontakty.html [NC]
+RewriteRule ^o-galoterapii$ o-galoterapii.html [NC]
+RewriteRule ^o-galoterapii/$ o-galoterapii.html [NC]
+RewriteRule ^pokazaniya-protivopokazaniya$ pokazaniya-protivopokazaniya.html [NC]
+RewriteRule ^pokazaniya-protivopokazaniya/$ pokazaniya-protivopokazaniya.html [NC]
+RewriteRule ^error-404$ error-404.html [NC]
+RewriteRule ^error-404/$ error-404.html [NC]
+RewriteRule ^error-404$ 404.html [NC]
+	
+RewriteRule ^error-404/$ error-404.html [NC]
+	
+
+	
+RewriteRule ^favicon.ico$ shahty.kz/images/favicon.ico [R=302,L]
