@@ -1,8 +1,0 @@
-/img/otzyvy/otzyv-001.webp
-/img/otzyvy/otzyv-002.webp
-/img/otzyvy/otzyv-003.webp
-/img/otzyvy/otzyv-004.webp
-/img/otzyvy/otzyv-005.webp
-/img/otzyvy/otzyv-006.webp
-/img/otzyvy/otzyv-007.webp
-/img/otzyvy/otzyv-008.webp

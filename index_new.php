@@ -29,7 +29,7 @@ RewriteRule ^shahtykz/$ home.html [NC]';
 	$htaccess .= "\n".'RewriteRule ^error-404$ 404.html [NC]'.
 	"\n".'RewriteRule ^error-404/$ error-404.html [NC]'.
 	"\n".
-	"\n".'RewriteRule ^favicon.ico$ shahty.kz/images/favicon.ico [R=302,L]';
+	"\n".'RewriteRule ^favicon.ico$ shahty.kz/images/favicon.ico [R=302,L]'."\n";
 	file_put_contents($_SERVER['DOCUMENT_ROOT'].'/htaccess.txt', $htaccess);
 	
 	foreach( $pages as $i => $page) {
