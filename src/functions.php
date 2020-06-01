@@ -21,7 +21,7 @@
 		function get_module_content($name) {
 			$module = get_module($name);
 			if( !$module ) { return 'Module does not exists';};
-			if( $module->tag == "" ) { $module->tag = 'div'; };
+			//if( $module->tag == "" ) { $module->tag = 'div'; };
 
 			$css_class		= ($module->css_class !=	'') ? ' class="'.			$module->css_class.'"'		: '';
 			$css_id			= ($module->css_id !=		'') ? ' id="'.				$module->css_id.'"'			: '';

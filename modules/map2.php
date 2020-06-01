@@ -5,11 +5,11 @@
 	global $articles;
 ?> 
 
-    <div>
+    <!-- <div> -->
         <div class="map-widget lazy" id="map2" data-loader="ajax" data-src="/modules/map2-data.php">
             Загрузка карты...
         </div>
-    </div>
+    <!-- </div> -->
     <div class="map-info">
         <div class="map-info-heading"><?=get_article_heading('article-map2');?></div>
         <div class="map-info-content"><?=get_article_content('article-map2');?></div>

@@ -7,7 +7,7 @@
                 $module_name = 'map1';
                 $module = get_module($module_name);
                 if( $module->shared )
-                    echo '<h2>'.get_module_heading($module_name).'</h2>';
+                    echo get_module_heading($module_name);
                     echo get_module_content($module_name);
             ?>
         </div>

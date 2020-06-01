@@ -82,21 +82,29 @@
   border-left: 6px solid #38B2CE;
 }
 
-.accordionjs .acc_section .acc_head::after {
+.accordionjs .acc_section .acc_head::after,
+.accordionjs .acc_section.acc_active > .acc_head::after 
+{
+  position: absolute;
+  right: 1em;
   font-family: 'icomoon';
   color: #206676;
   content: "\e900"; 
   transition: 200ms;
   transform: rotate(90deg);
+  align-self: center;
 }
 .accordionjs .acc_section.acc_active > .acc_head::after {
-  font-family: 'icomoon';
-  color: #206676;
-  content: "\e900";
   transform: rotate(-90deg);
-  transition: 200ms;
+  /* transition: 200ms; */
 }
-.accordionjs .acc_section .acc_head:hover::after,
-.accordionjs .acc_section.acc_active > .acc_head:hover::after {
-  font-size: 1.5em;
+.acc_head {
+  font-size: 1.2rem;
+  position: relative;
+  padding-right: 2em !important;
+}
+@media (max-width:768px) {
+  .acc_head {
+    font-size: 1rem !important;
+  }
 }

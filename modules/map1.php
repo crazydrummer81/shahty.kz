@@ -13,9 +13,9 @@
             </a>
         </div>
     </div>
-    <div>
+    <!-- <div> -->
         <div class="map-widget lazy" id="map1" data-loader="ajax" data-src="/modules/map1-data.php">
             Загрузка карты...
         </div>
-    </div>
+    <!-- </div> -->
 
