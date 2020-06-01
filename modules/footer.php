@@ -2,7 +2,7 @@
     <!-- </div> -->
 
     <div class="row">
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-top:40px;">
             <?php
                 $module_name = 'map1';
                 $module = get_module($module_name);
