@@ -6,8 +6,11 @@
 ?> 
 
     <!-- <div> -->
-        <div class="map-widget lazy" id="map2" data-loader="ajax" data-src="/modules/map2-data.php">
-            Загрузка карты...
+        <div class="map-widget" id="map2">
+            <div class="lazy" style="height:100%" data-loader="ajax" data-src="/modules/map2-data.php">
+                Загрузка карты...
+            </div>
+            <div class="m2map-overlay" id="map2-overlay"></div>
         </div>
     <!-- </div> -->
     <div class="map-info">

@@ -249,10 +249,12 @@
         </div>
     </div>
     <!-- <div> -->
-        <div class="map-widget lazy" id="map1" data-loader="ajax" data-src="/modules/map1-data.php">
-            Загрузка карты...
+        <div class="map-widget" id="map1">
+            <div class="lazy" style="height:100%" data-loader="ajax" data-src="/modules/map1-data.php">
+                Загрузка карты...
+            </div>
+            <div class="m2map-overlay" id="map1-overlay"></div>
         </div>
-
     <!-- </div> -->
 
 </div>        </div>
@@ -262,8 +264,11 @@
             <div class="map"> 
 
     <!-- <div> -->
-        <div class="map-widget lazy" id="map2" data-loader="ajax" data-src="/modules/map2-data.php">
-            Загрузка карты...
+        <div class="map-widget" id="map2">
+            <div class="lazy" style="height:100%" data-loader="ajax" data-src="/modules/map2-data.php">
+                Загрузка карты...
+            </div>
+            <div class="m2map-overlay" id="map2-overlay"></div>
         </div>
     <!-- </div> -->
     <div class="map-info">
@@ -289,7 +294,9 @@
 		<li><a href="/pokazaniya-protivopokazaniya">Противопоказания</a></li>
 	</ul></footer>    
     <link rel="stylesheet" type="text/css" href="css/jquery.jbcallme.css">
+    <link rel="stylesheet" type="text/css" href="plugins/m2map.css">
     <script src="js/jquery.min.js"></script>
+    <script src="plugins/m2map.js"></script>
     <script src="js/jquery.jbcallme.js"></script>
     <script src="js/form-popup.js"></script>
     <script src="js/jquery.lazy.min.js"></script>

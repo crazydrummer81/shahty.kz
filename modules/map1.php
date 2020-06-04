@@ -14,9 +14,11 @@
         </div>
     </div>
     <!-- <div> -->
-        <div class="map-widget lazy" id="map1" data-loader="ajax" data-src="/modules/map1-data.php">
-            Загрузка карты...
+        <div class="map-widget" id="map1">
+            <div class="lazy" style="height:100%" data-loader="ajax" data-src="/modules/map1-data.php">
+                Загрузка карты...
+            </div>
+            <div class="m2map-overlay" id="map1-overlay"></div>
         </div>
-
     <!-- </div> -->
 

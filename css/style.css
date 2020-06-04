@@ -365,6 +365,7 @@ h3 {
     width: 100px;
 }
 .map {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr; */

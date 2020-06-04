@@ -29,7 +29,9 @@
 		echo get_module_content($module_name);
 ?>    
     <link rel="stylesheet" type="text/css" href="css/jquery.jbcallme.css">
+    <link rel="stylesheet" type="text/css" href="plugins/m2map.css">
     <script src="js/jquery.min.js"></script>
+    <script src="plugins/m2map.js"></script>
     <script src="js/jquery.jbcallme.js"></script>
     <script src="js/form-popup.js"></script>
     <script src="js/jquery.lazy.min.js"></script>

@@ -35,8 +35,8 @@ body.blocked {
  .m2slider {
 	display: grid;
 	grid-template-columns: 33% 1fr 33%;
-	width: 98%;
-	height: 95%;
+	width: 100%;
+	height: 100%;
 	justify-items: stretch;
 	box-sizing: border-box;
 	z-index: 500;
@@ -63,6 +63,7 @@ body.blocked {
  .m2slider--button-close:hover {
 	transition: 150ms;
 	color: rgb(255,255,255,1);
+	cursor: pointer;
  }
  .m2slider--arrow-left {
 	grid-area: 1/1/1/1;
