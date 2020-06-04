@@ -57,6 +57,7 @@ body.blocked {
 	z-index: 600;
 	align-self: center;
 	height: 100%;
+	-webkit-tap-highlight-color: transparent;
  }
  .m2slider--arrow-left:hover,
  .m2slider--arrow-right:hover,
