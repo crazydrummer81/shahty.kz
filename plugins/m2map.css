@@ -1,7 +1,7 @@
 .m2map-overlay {
 	position: absolute;
-	opacity: 0.3;
-	background: #000;
+	/* opacity: 0.3; */
+	background-color: rgba(0, 0, 0, 0.3);
 	color: white;
 	display: flex;
 	align-items: center;
@@ -12,6 +12,7 @@
 	transition: 200ms;
 }
 .m2map-overlay.m2map-maximized {
+	align-items: flex-end;
 }
 .m2map-overlay.m2map-minimized {
 }
@@ -21,9 +22,27 @@
 	font-size: 30px;
 }
 .m2map-overlay.m2map-maximized::before {
-	content: "\2612";
-	top: 0; right: 0;
+	background-image: url("/img/icons/minimize-white.png");
+	background-position: 50% top;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 110px;
+	background-size: 50px;
+	content: "Прикоснитесь, чтобы \A переместить карту";
+	white-space: pre;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 20px;
 }
 .m2map-overlay.m2map-minimized::before {
-	content: "\2611";
+	background-image: url("/img/icons/expand-white.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	background-size: 30px;
+	content: "";
 }
