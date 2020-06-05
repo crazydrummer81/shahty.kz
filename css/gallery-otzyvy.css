@@ -14,6 +14,7 @@
 }
 .gallery-otzyvy--item img {
 	width: 100%;
+	border-radius: 10px;
 }
 .gallery-otzyvy--item:last-child {
 	margin-bottom: 0;
@@ -21,6 +22,9 @@
 @media (max-width:768px) {
 	.gallery-otzyvy {
 		grid-template-columns: 1fr;
-		grid-gap: 0;
+		grid-gap: 0px;
+	}
+	.gallery-otzyvy--item, .gallery-otzyvy--item:last-child {
+		margin-bottom: 10px;
 	}
 }
