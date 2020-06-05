@@ -202,7 +202,6 @@ nav {
     z-index: 200;
     right: 0px;
     display: none;
-    /* max-width: 200px; */
 }
 
 .dws-menu li ul a {
@@ -233,31 +232,32 @@ nav {
     min-height: 500px;
 }
 .overlay {
-    /* position: absolute; */
-    /* left: 0px; */
-    width: 100%;
-    background-position: center center;
-    background-repeat: repeat;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0; 
     z-index: 1;
     background-color: rgba(226,247,255,0.61);
 }
 .heroblock {
     width: 100%;
-    /* background-image: url(../img/hero-block-room-1600x800.webp); */
+    background-image: url(../img/hero-block-room-1600x800.webp);
     background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-items: center;
 }
 .heroblock-container {
     max-width: 1240px;
-    margin: 0px auto;
-    padding-top: 50px;
-    /* padding: 40px 20px; */
-    /* ------------ */
+    margin: 0px 20px;
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 1rem;
     align-items: center;
+    z-index: 2;
 }
 #heroblock_video {
     grid-column: 2/3;
@@ -268,8 +268,8 @@ nav {
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    margin-right: 20px;
-    margin-left: 20px;
+    /* margin-right: 20px;
+    margin-left: 20px; */
 }
 #heroblock_video iframe {
     position: absolute;
@@ -281,19 +281,32 @@ nav {
 
 #heroblock_button,
 #heroblock_heading,
-#heroblock_offer
- {
-    display: block;
-    margin-left: 20px;
+#heroblock_offer,
+#heroblock_video {
+    position: relative; z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
+ #heroblock_button a { margin-top: 0; }
  #heroblock_heading { 
      font-size: 2.5rem; 
      font-weight: bold; 
      padding-top: 0px;
      text-transform: uppercase;
      text-align: left;
+     margin-bottom: 0;
+     align-self: end;
 }
 #heroblock_offer { font-size: 2rem; font-weight: normal; padding-top: 0px; line-height: 1.4em; }
+#heroblock_button {
+    align-self: start;
+}
+@media (max-width:768px) {
+    #heroblock_heading { margin-top: 40px; }
+    #heroblock_button { margin-top: 40px !important; }
+    
+}
 
 div.row, div.row-dark, div.row-light {
     width: 100%;
@@ -398,7 +411,7 @@ h3 {
 .map-info-heading strong { font-size: 1.4em;}
 .map-info-content { font-size: 1em; padding: 30px 20px auto 20px;}
 .map-info-phone { font-size: 1.5em; font-weight: bold; padding: 30px 0px; }
-.map-overlay { 
+/* .map-overlay { 
     position: absolute;
     bottom:0; left:0; width: 100%; height: 100%;
     background-image: url("../img/icons/minimize.svg");
@@ -414,7 +427,7 @@ h3 {
     width:80px; height:80px;
     background-position: center;
     background-image: url("../img/icons/expand.svg");
-}
+} */
 @media (max-width:768px) {
 .map-overlay{
     display:block;

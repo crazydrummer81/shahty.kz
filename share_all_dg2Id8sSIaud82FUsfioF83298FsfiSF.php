@@ -12,7 +12,7 @@ RewriteCond %{HTTP:X-Scheme} =http
 RewriteRule ^(.*)$ shahty\.kz/$1 [R=301,L]
 
 RewriteCond %{HTTP:X-Scheme} =https
-RewriteCond %{HTTP_HOST} ^www\.vulkanizatsiya.kz [NC]
+RewriteCond %{HTTP_HOST} ^www\.shahty.kz [NC]
 RewriteRule ^(.*)$ shahty\.kz/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} /robots.txt
@@ -37,7 +37,7 @@ RewriteRule ^shahtykz/$ home.html [NC]';
 			include 'modules/footer.php';
 			$html = ob_get_clean();
 			file_put_contents($page->alias.'.html', $html);
-			echo 'Страница '.$page->alias.' опупликована.<br>';
+			echo 'Страница '.$i.': '.$page->alias.' опупликована.<br>';
 		}
 	}
 ?>

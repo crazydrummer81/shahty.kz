@@ -1,3 +1,4 @@
+@media (max-width:768px) {
 .m2map-overlay {
 	position: absolute;
 	/* opacity: 0.3; */
@@ -45,4 +46,5 @@
 	height: 30px;
 	background-size: 30px;
 	content: "";
+}
 }

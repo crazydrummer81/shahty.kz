@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-	console.log('PIZDA');
 	
 	$(".m2map-overlay").addClass('m2map-maximized');
 	
