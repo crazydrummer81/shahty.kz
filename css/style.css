@@ -244,8 +244,8 @@ nav {
     background-size: cover;
     position: relative;
     display: flex;
-    align-content: center;
-    justify-items: center;
+    align-items: center;
+    justify-content: center;
 }
 .heroblock-container {
     max-width: 1240px;
@@ -285,8 +285,8 @@ nav {
 #heroblock_video {
     position: relative; z-index: 2;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
  }
  #heroblock_button a { margin-top: 0; }
  #heroblock_heading { 
@@ -296,11 +296,11 @@ nav {
      text-transform: uppercase;
      text-align: left;
      margin-bottom: 0;
-     align-self: end;
+     align-self: center;
 }
 #heroblock_offer { font-size: 2rem; font-weight: normal; padding-top: 0px; line-height: 1.4em; }
 #heroblock_button {
-    align-self: start;
+    align-self: center;
 }
 @media (max-width:768px) {
     #heroblock_heading { margin-top: 40px; }
