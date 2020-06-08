@@ -25,8 +25,9 @@ $json = file_get_contents("json/pricelist.json");
                 $p_id++;
             }
         }
-        echo('<span class="price-note">'.$pricelist["categories"][$cat_id]["description"]["content"].'</span>');
-        echo('</div></div>');
+        echo '<span class="price-note">'.$pricelist["categories"][$cat_id]["description"]["content"].'</span>';
+        echo get_module_content('button-buy');
+        echo '</div></div>';
     }
     
 ?>
