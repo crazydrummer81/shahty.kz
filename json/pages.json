@@ -6,7 +6,7 @@
 		"template": "home.php",
 		"url": "/home",
 		"additional_head_elements": "",
-		"additional_body_elements": "<link rel='stylesheet' type='text/css' href='css/gallery.css' /><link rel='stylesheet' type='text/css' href='plugins/m2slider-simple.css' /><link rel='stylesheet' type='text/css' href='css/accordion.css' /><script src='plugins/m2slider-simple.js'></script><script src='js/accordion.min.js'></script>",
+		"additional_body_elements": "<link rel='stylesheet' type='text/css' href='css/gallery.css' /><link rel='stylesheet' type='text/css' href='plugins/m2slider-simple.css' /><!-- <link rel='stylesheet' type='text/css' href='css/accordion.css' />--><script src='plugins/m2slider-simple.js'></script><!--<script src='js/accordion.min.js'></script>-->",
 		"title": "Соляная шахта Алматы. Галотерапия для детей и взрослых. Заходите.",
 		"description": "Соляная шахта (Галокамера) Алматы. Влажность 40%. Сеанс 40 минут. Используем только натуральные продукты. Игрушки для детей. Удобная парковка."
 	},
