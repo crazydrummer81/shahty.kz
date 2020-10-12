@@ -8,7 +8,7 @@ $json = file_get_contents("json/pricelist.json");
     for ($cat_id = 3; $cat_id <=6; $cat_id++) {
         
         echo('<div class="row"><div class="container" style="flex-direction: column;">');
-        if( $cat_id == 3 ) echo '<h1>'.get_article_heading('article-solyanye-shahty-almaty').'</h1><div class="divider"></div>';
+        if( $cat_id == 3 ) echo '<h1>'.get_article_heading('price').'</h1><div class="divider"></div>';
         echo '<h2>'.$pricelist["categories"][$cat_id]["description"]["heading"].'<br/></h2>';
 
         foreach ($pricelist["products"] as $product) {

@@ -1,6 +1,6 @@
 <?php
 	global $page;
-?>
+	?>
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
@@ -16,6 +16,10 @@
 		<?=$page->additional_head_elements; ?>
 
 		<script type='application/ld+json'><?php include('json/schema-org.json');?></script>
+		
+		<?php if ($page->alias == 'home') { ?>
+			<script type='application/ld+json'><?php include('json/schema-org-faq.json');?></script>
+		<?php } ?>
 	</head>
 	<body>
 <?php 

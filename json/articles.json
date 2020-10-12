@@ -105,6 +105,13 @@
 		"image": ""
 	},
 	{
+		"id": 17,
+		"alias": "contacts",
+		"heading": "Соляная пещера Алматы - контакты",
+		"content": "",
+		"image": ""
+	},
+	{
 		"id": 16,
 		"alias": "error-404",
 		"heading": "Ошибка 404",
