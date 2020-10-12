@@ -45,7 +45,7 @@ http://jetbit.ru/market/jbcallme
             $('<div id="jbCallme_overlay" class="jbCallme_overlay"></div>').appendTo($("body"));
         }
         if (!$("#jbCallme_" + this.options.postfix).length) {
-            $('<div id="jbCallme_' + this.options.postfix + '" class="jbCallme"><div class="jb_title">' + this.options.title + '</div><a title="Закрыть" class="jb_close">Закрыть</a><form class="jb_form"></form><div class="jb_success">' + this.options.success + '</div><div class="jb_progress"></div><div class="jb_fail">' + this.options.fail + '</div></div>').appendTo($("body"));
+            $('<div id="jbCallme_' + this.options.postfix + '" class="jbCallme"><div class="jb_title">' + this.options.title + '</div><a title="\u0417\u0430\u043a\u0440\u044b\u0442\u044c" class="jb_close">\u0417\u0430\u043a\u0440\u044b\u0442\u044c</a><form class="jb_form"></form><div class="jb_success">' + this.options.success + '</div><div class="jb_progress"></div><div class="jb_fail">' + this.options.fail + '</div></div>').appendTo($("body"));
 
             this.$success = $('.jb_success').hide();
             this.$fail = $('.jb_fail').hide();
@@ -53,20 +53,20 @@ http://jetbit.ru/market/jbcallme
             this.$overlay = $('#jbCallme_overlay');
             this.$overlay = $('#jbCallme_overlay');
             this.$container = $("#jbCallme_" + this.options.postfix);
-            //this.$container.append($('<a/>').html('%A9%20jbCallMe').attr('href','https%3A//jbform.com').attr('target','_blank').addClass("jb_dev"));
+            this.$container.append($('<a/>').html('\u00a9 \u006a\u0062\u0043\u0061\u006c\u006c\u004d\u0065').attr('\u0068\u0072\u0065\u0066','\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u006A\u0062\u0066\u006F\u0072\u006D\u002E\u0063\u006F\u006D').attr('\u0074\u0061\u0072\u0067\u0065\u0074','\u005f\u0062\u006c\u0061\u006e\u006b').addClass("jb_dev"));
             this.$form = this.$container.find(".jb_form");
             var options = {};
             if (!this.options.no_name) {
                 options.name = {
                     required: false,
-                    placeholder: "Ваше имя",
+                    placeholder: "\u0412\u0430\u0448\u0435 \u0438\u043c\u044f",
                     type: "text"
                 }
             }
             if (!this.options.no_tel) {
                 options.tel = {
                     required: true,
-                    placeholder: "Номер телефона",
+                    placeholder: "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430",
                     type: "tel",
                     class: "input_phone"
                 }

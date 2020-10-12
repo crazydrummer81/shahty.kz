@@ -509,3 +509,21 @@ footer a:hover {
     #header_callback {width: 100%; margin: 20px auto;}
 
 }
+
+.action { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center;} 
+.action::after {
+    content: "";
+    width: 70px; height: 70px;
+    background: url(../img/action-logo.png) no-repeat; 
+    background-position: center; background-size: cover;
+    
+}
+.action .action_row {
+    display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 40px;
+}
+.action .action_row .action_row__place { color: red; }
+.action_row__place_number { font-size: 80px; font-weight: bold; }
+.action_row__place_text { font-size: 35px; display: inline-flex; transform: translateY(-5px); }
+.action .action_row .action_row__description {
+    font-weight: bold; font-size: 30px; text-align: center; margin-left: 20px; line-height: 1.5em;
+}

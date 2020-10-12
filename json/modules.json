@@ -218,5 +218,18 @@
 				{"src": "otzyvy/otzyv-008.webp", "alt": "Отзыв о соляной шахте Дышите здоровьем"}
 			]
 		}
+	},
+	{
+		"id": 13,
+		"shared": true,
+		"name": "action",
+		"url": "/modules/action.php",
+		"heading": "Розыгрыш абонементов!",
+		"heading_tag": "h3",
+		"tag": "div",
+		"css_id": "",
+		"css_class": "action",
+		"data_loader": "",
+		"data_src": ""
 	}
 ]}

@@ -3,6 +3,9 @@
 		?>
 
 		<?= get_module_content('heroblock'); ?>
+		<div class="row" style="background: #fff url(img/action.png) no-repeat; background-position: left bottom; background-size:120px;"><div class="container">
+			<?= get_module_content('action'); ?>
+		</div></div>
 		<div class="row"><div class="container">
 		<?php
 			echo get_module_heading('features');

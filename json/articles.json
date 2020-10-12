@@ -110,5 +110,12 @@
 		"heading": "Ошибка 404",
 		"content": "Данной страницы не существует, или она была удалена. Перейдите на <a href='/'>Главную страницу</a> или любую интересущую вас в верхнем меню или по ссылкам внизу страницы.",
 		"image": ""
+	},
+	{
+		"id": 17,
+		"alias": "action",
+		"heading": "Розыгрыш абонементов!",
+		"content": "<div class='action_wraper'><div class='action_row'><div class='action_row__place'><span class='action_row__place_number'>1</span><span class='action_row__place_text'>место</span></div><div class='action_row__description'>20 посещений на сумму<br> 30&nbsp;000 тенге</div></div><div class='action_row'><div class='action_row__place'><span class='action_row__place_number'>2</span><span class='action_row__place_text'>место</span></div><div class='action_row__description'>15 посещений на сумму<br> 27&nbsp;000 тенге</div></div><div class='action_row'><div class='action_row__place'><span class='action_row__place_number'>3</span><span class='action_row__place_text'>место</span></div><div class='action_row__description'>10 посещений на сумму<br> 20&nbsp;000 тенге</div></div></div>",
+		"image": ""
 	}
 ]}
