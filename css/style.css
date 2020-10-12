@@ -29,13 +29,13 @@ body {
     /* max-width: 1600px; */
 }
 
-a, a:visited {text-decoration: none; transition: all 150ms ease-in; color: inherit;}
+a, a:visited, a svg {text-decoration: none; transition: all 150ms ease-in; color: inherit;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: normal;}
 
 
-a:hover {
+a:hover, a:hover svg {
     color: #FF7F00;
     transition: all 150ms ease-in;
 }
@@ -523,16 +523,24 @@ footer a:hover {
     display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 40px;
 }
 .action .action_row .action_row__place { color: red; }
-.action_row__place_number { font-size: 80px; font-weight: bold; }
-.action_row__place_text { font-size: 35px; display: inline-flex; transform: translateY(-5px); }
+.action .action_row .action_row__place_number { font-size: 80px; font-weight: bold; }
+.action .action_row .action_row__place_text { font-size: 35px; display: inline-flex; transform: translateY(-5px); }
 .action .action_row .action_row__description {
     font-weight: bold; font-size: 30px; text-align: center; margin-left: 20px; line-height: 1.5em;
 }
+.action .action_row .action_row__more {
+    font-size: 22px; display: flex; align-items: center; flex-direction: column; cursor: pointer;
+}
+.action .action_row .action_row__more .action_row__more_icon { 
+    width: 40px; height: 40px;
+}
+.action .action_row .action_row__more .action_row__more_icon svg { fill:#015367; }
+.action .action_row .action_row__more:hover svg { fill:rgb(255, 127, 0); }
 @media (max-width:768px) {
     .action h3 { font-size: 36px; }
     .action .action_row .action_row__description {
         font-size: 24px;
     }
-    .action_row__place_number { font-size: 75px; }
-    .action_row__place_text { font-size: 30px; }
+    .action .action_row .action_row__place_number { font-size: 75px; }
+    .action .action_row .action_row__place_text { font-size: 30px; }
 }
