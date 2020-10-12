@@ -6,7 +6,7 @@
 	if( $module->shared ): 
 ?> 
 <!-- <<?=$module->tag?> id="<?=$module->css_id ?>" class="<?=$module->css_class ?>"> -->
-	<<?=$module->heading_tag?> style="font-size: 40px;">
+	<<?=$module->heading_tag?>>
 		<?=$module->heading ?>
 	</<?=$module->heading_tag?>>
 

@@ -518,6 +518,7 @@ footer a:hover {
     background-position: center; background-size: cover;
     
 }
+.action h3 { font-size: 40px; }
 .action .action_row {
     display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 40px;
 }
@@ -526,4 +527,12 @@ footer a:hover {
 .action_row__place_text { font-size: 35px; display: inline-flex; transform: translateY(-5px); }
 .action .action_row .action_row__description {
     font-weight: bold; font-size: 30px; text-align: center; margin-left: 20px; line-height: 1.5em;
+}
+@media (max-width:768px) {
+    .action h3 { font-size: 36px; }
+    .action .action_row .action_row__description {
+        font-size: 24px;
+    }
+    .action_row__place_number { font-size: 75px; }
+    .action_row__place_text { font-size: 30px; }
 }
